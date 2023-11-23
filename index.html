@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>> Question # 01</h2>
+    <h3>Declare an empty array using JS literal notation to store
+        student names in future.</h3>
+
+<script>
+
+var studentNames = [];
+document.write(studentNames);
+studentNames.push("Faraz")
+studentNames.push("Shams")
+document.write(studentNames);
+
+
+</script>
+
+<h2>> Question # 02</h2>
+<h3>Declare an empty array using JS object notation to store
+    student names in future.</h3>
+
+<script>
+
+var person =[
+
+firstName = "Faraz",
+lastName = "Shams",
+age      = 25
+
+];
+
+document.write(firstName + lastName + " My age is " +age)
+
+
+</script>
+<h2>> Question # 03</h2>
+<h3>Declare and initialize a strings array..</h3>
+
+<script>
+
+var names =["Faraz ", "Nawaz" , " Faisal", "Noman", "Ayaz"]
+
+document.write(names);
+document.write("<br>")
+document.write(names[2 , 3 ,1]);
+
+
+</script>
+
+<h2>> Question # 04</h2>
+<h3>Declare and initialize a numbers array..</h3>
+
+<script>
+
+var numbers =[10,20,30,50,40,90]
+
+document.write(numbers);
+
+
+
+
+</script>
+
+<h2>> Question # 05</h2>
+<h3>Declare and initialize a Boolean array..</h3>
+
+<script>
+
+var booleanArray =["true", "false"]
+
+document.write("Boolean Array :" + "       " + booleanArray);
+
+
+
+
+</script>
+
+<h2>> Question # 06</h2>
+<h3>Declare and initialize a mixed array</h3>
+
+<script>
+
+var mixedArray =[87 , "Faraz " , true , ["Ali" , "Hamza"] ,{key: "value" } ]
+
+document.write(mixedArray);
+
+
+
+
+</script>
+
+<h2>> Question # 07</h2>
+<h3>Declare and Initialize an array and store available
+education qualifications in Pakistan</h3>
+
+<script>
+
+var Qualification = ["SSC" , "HSC" , "BCS",
+"BS" , "BCOM" , "MS" , "M. Phil.", "PhD" ];
+
+for(var i = 0 ; i< Qualification.length ; i++){
+document.write(Qualification[i] + "<br>")
+}
+
+</script>
+
+
+<h2>> Question # 08</h2>
+<h3>Declare and Initialize an array and store available
+education qualifications in Pakistan</h3>
+
+<script>
+
+var studentsName1 = "Rizwan" ;
+var Score1= 320
+var totalMarks=500
+
+function Percentage(Score1){
+
+var a = Score1
+var b = a/totalMarks * 100
+return b;
+}
+var total = Percentage(Score1,totalMarks)
+document.write("Score Of Rizwan Is "+ " " + total + "%")
+
+//section----End--
+
+document.write("<br>")
+
+
+
+var studentsName1 = "Faraz" ;
+var Score1= 230
+var totalMarks=500
+
+function Percentage(Score1){
+
+var a = Score1
+var b = a/totalMarks * 100
+return b;
+}
+var total = Percentage(Score1,totalMarks)
+document.write("Score Of Faraz Is  " + "  "  + total + "%")
+
+
+
+document.write("<br>")
+
+//section----End--
+
+var studentsName1 = "Robas" ;
+var Score1= 480
+var totalMarks=500
+
+function Percentage(Score1){
+
+var a = Score1
+var b = a/totalMarks * 100
+return b;
+}
+var total = Percentage(Score1,totalMarks)
+document.write("Score Of Robas Is  " + "  "  + total + "%")
+
+</script>
+
+<h2>> Question # 09</h2>
+<h3>Declare and Initialize an array and store available
+education qualifications in Pakistan</h3>
+
+<script>
+
+var colors=[ "Red ", " Green" , " Blue" , " Purple" , " Yellow"]
+ 
+document.write("Original Colors Are :" + " " + colors)
+
+document.write ("<br>")
+
+var addcolor = prompt( "Enter a color to add at the beginning")
+
+colors.unshift(addcolor)
+
+document.write("Add color at the Start :"+ " " +colors)
+
+document.write("<br>")
+
+var addcolorend = prompt("Enter a color to add to the End ")
+
+colors.push(addcolorend)
+
+document.write("Add color at the End :"+ " " + colors)
+
+
+document.write("<br>")
+
+colors.unshift("Light Grey " ," Light Blue ")
+
+document.write("Add two colors to the Start :" + " " + colors)
+
+document.write("<br>")
+
+colors.shift();
+
+document.write("Delete first color to the Start :" + " " + colors)
+
+document.write("<br>")
+
+colors.pop()
+document.write("Delete color to the End :" + " " + colors)
+
+
+
+</script>
+<h2>> Question # 10</h2>
+<h3>Write a program to store student scores in an array &
+    sort the array in ascending order using Array’s sort
+    method.</h3>
+
+<script>
+
+var scores = [ 320,230,480,120,500 ];
+scores.sort();
+document.write(scores);
+
+
+</script>
+
+<h2>> Question # 11</h2>
+<h3>Write a program to initialize an array with city names.
+    Copy 3 array elements from cities array to selectedCities
+    array.</h3>
+
+<script>
+
+var cities = [ "Karachi " , " Lahore " ," Islamabad" , " Quetta" , " Peshawar"];
+
+document.write(cities);
+
+document.write("<br>");
+
+var selectedcity= cities.slice(0,3); 
+
+document.write(selectedcity);
+
+
+
+
+</script>
+
+<h2>> Question # 12</h2>
+<h3>Write a program to create a single string from the
+    below mentioned array:</h3>
+
+<script>
+
+var arr = ["This ", " is ", " my ", " cat" ];
+
+document.write(arr);
+
+document.write("<br>");
+
+var arr1 = arr.join(" ");
+
+document.write(arr1);
+
+
+
+
+</script>
+</script>
+
+<h2>> Question # 13</h2>
+<h3>Create a new array. Store values one by one in such a way
+    that you can access the values in the order in which they
+    were stored. (FIFO-First In First Out)</h3>
+
+
+<script>
+
+
+document.write("<h2>FIFO (First In First Out)</h2>")
+var deviceQueue = [ ];
+deviceQueue.push("Keyboard" + "<br>")
+deviceQueue.push("Mouse"  + "<br>")
+deviceQueue.push("Printer"  + "<br>")
+deviceQueue.push("Monitor"  + "<br>")
+
+
+document.write(deviceQueue.shift());
+document.write(deviceQueue.shift());
+document.write(deviceQueue.shift());
+document.write(deviceQueue.shift());
+
+document.write(deviceQueue)
+
+document.write("<br>")
+
+document.write("<h2>LIFO (Last In First Out)</h2>")
+var deviceQueue = [ ];
+deviceQueue.push("Keyboard" + "<br>")
+deviceQueue.push("Mouse"  + "<br>")
+deviceQueue.push("Printer"  + "<br>")
+deviceQueue.push("Monitor"  + "<br>")
+
+
+document.write(deviceQueue.pop());
+document.write(deviceQueue.pop());
+document.write(deviceQueue.pop());
+document.write(deviceQueue.pop());
+
+document.write(deviceQueue)
+
+</script>
+
+<h2>> Question # 14</h2>
+<h3>Write a program to store phone manufacturers (Apple,
+    Samsung, Motorola, Nokia, Sony & Haier) in an array.
+    Display the following dropdown/select menu in your
+    browser using document.write() method::</h3>
+
+<script>
+
+var phoneCompanies = ["Apple ", " Samsung ", " Motorola ", " Nokia" , " Sony" , " Haier" ];
+
+var dropdownhtml = '<select id ="manufacturerSelect">';
+
+    for(var i = 0 ; i <phoneCompanies.length ; i++ ){
+        dropdownhtml+= '<option value="' + phoneCompanies[i] + '">' + phoneCompanies[i] + '</option>';
+    }
+
+
+dropdownhtml += '</select>';
+
+
+document.write(dropdownhtml);
+
+
+</script>
+
+</body>
+</html>
